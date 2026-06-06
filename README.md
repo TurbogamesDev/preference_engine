@@ -1,8 +1,8 @@
 work in progress
 
 to-do list:
-- get every anime on my profile in an arranged manner with custom classes
-- get all the tags and make a separate tag class
+- get every anime on my profile in an arranged manner with custom classes (entry class)
+- get all the tags and make a separate tag_score class that can take many entry classes and calculate score on demand
 - calculate the 4 factors of amount_of_tag_in_show, completion_weight, run_time_in_hours, and decay_factor separately
 - combine them and add them across each anime to score each tag individually
 - give scores to every anime on the planning list
