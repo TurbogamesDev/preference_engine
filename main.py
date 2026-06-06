@@ -15,6 +15,13 @@ response = graphql_interface.run_anilist_query(
 
 for entry in response["MediaListCollection"]["lists"][0]["entries"]:
     entry_title = entry["media"]["title"]["english"]
+
+    if entry_title == None:
+        entry_title = entry["media"]["title"]["romaji"]
+
+    if entry_title == None:
+        entry_title = entry["media"]["title"]["native"]
+
     entry_progress = entry["progress"]
     entry_episodes = entry["media"]["episodes"]
 

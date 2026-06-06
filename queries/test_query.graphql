@@ -6,6 +6,8 @@ query ($type: MediaType!, $userName: String!, $status: MediaListStatus) {
         media {
           title {
             english
+            romaji
+            native
           }
           episodes
         }
