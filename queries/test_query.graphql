@@ -1,0 +1,16 @@
+query ($type: MediaType!, $userName: String!, $status: MediaListStatus) {
+  MediaListCollection(type: $type, userName: $userName, status: $status) {
+    lists {
+      name
+      entries {
+        media {
+          title {
+            english
+          }
+          episodes
+        }
+        progress
+      }
+    }
+  }
+}
