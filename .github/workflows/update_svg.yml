@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '37 * * * *'
+  repository_dispatch:
+    types: [external-cron-trigger]
 
 jobs:
   build-and-update:
