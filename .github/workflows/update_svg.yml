@@ -2,8 +2,6 @@ name: Anime Preference Prediction SVG Updator
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '37 * * * *'
   repository_dispatch:
     types: [external-cron-trigger]
 
