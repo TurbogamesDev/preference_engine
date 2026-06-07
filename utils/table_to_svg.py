@@ -25,11 +25,10 @@ svg_format = """
 
   <rect class="bg" width="720" height="448" />
 
-  <text x="35" y="65" class="header">Anime Preference Predictor</text>
+  <text x="35" y="65" class="header">Anime Preference Predictor {TIMESTAMP}</text>
   <line x1="35" y1="85" x2="685" y2="85" class="line" />
 
   {ROWS}
-<!-- {TIMESTAMP} -->
 </svg>
 """
 
@@ -76,4 +75,4 @@ def convert_table_to_svg(input_table) -> str:
                 FIELD_3 = row[2],
             )
 
-    return return_svg.format(ROWS = rows_svg, TIMESTAMP = datetime.now().timestamp)
+    return return_svg.format(ROWS = rows_svg, TIMESTAMP = datetime.now().strftime("%H:%M %d/%m/%y"))
