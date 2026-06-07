@@ -7,6 +7,8 @@ import utils.entry_score_calculator as entry_score_calc
 import statistics
 from tabulate import tabulate
 import utils.table_to_svg as table_to_svg
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 test_query_file_path = "queries/test_query.graphql"
 
@@ -88,6 +90,17 @@ table_headers = ["Rank", "Anime Title", "Prediction"]
 
 with open("output.svg", "w", encoding="utf-8") as file:
     file.write(table_to_svg.convert_table_to_svg(table_data))
+
+with open("log_file.txt", "a", encoding="utf-8") as file:
+    file.write(f"Log file for {datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%H:%M:%S %d/%m/%y")}:\n")
+
+    file.write(
+        tabulate(table_data, table_headers)
+    )
+
+    file.write("^_^-" * 20)
+
+
 
 # table_data = [
 #     [i, entry.media.title, f"{}"]
