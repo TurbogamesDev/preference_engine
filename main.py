@@ -57,6 +57,8 @@ for entry in started_entries:
         statistics.median(started_entry_score_values)
     )
 
+    entry.normalised_score = normalised_entry_score
+
     # table_data.append([entry.media.title, f"{normalised_entry_score}%"])
 
     # print(f"This should be 100%: {entry_score_calc.normalise_raw_entry_score(max(started_entry_score_values), max(tag_score_values), statistics.median(tag_score_values))}%")
@@ -82,14 +84,19 @@ for entry in not_started_entries:
     print(f"{entry.media.title} is predicted to have a score of {normalised_entry_score:.2f}%") 
 
 table_data = [
-    [f"#{i}", entry.media.title, f"{entry.normalised_score:.2f}%"]
+    [f"#{i}", entry.media.title, f"{entry.normalised_score:.2f}%", entry.status]
     for i, entry in enumerate(sorted(not_started_entries, key = lambda x: x.normalised_score, reverse = True), 1)
 ]
 
-table_headers = ["Rank", "Anime Title", "Prediction"]
+table_headers = ["Rank", "Anime Title", "Prediction", "Status"]
 
 with open("output.svg", "w", encoding="utf-8") as file:
     file.write(table_to_svg.convert_table_to_svg(table_data))
+
+table_data.extend([
+    [f"#{i}", entry.media.title, f"{entry.normalised_score:.2f}%", entry.status]
+    for i, entry in enumerate(sorted(started_entries, key = lambda x: x.normalised_score, reverse = True), 1)
+])
 
 with open("log_file.txt", "a", encoding="utf-8") as file:
     file.write(f"Log file for {datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%H:%M:%S %d/%m/%y")}:\n")
@@ -98,7 +105,11 @@ with open("log_file.txt", "a", encoding="utf-8") as file:
         tabulate(table_data, table_headers)
     )
 
-    file.write("^_^-" * 20)
+    file.write("\n")
+
+    file.write("-" * 80)
+
+    file.write("\n")
 
 
 
