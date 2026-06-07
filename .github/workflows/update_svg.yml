@@ -45,4 +45,4 @@ jobs:
         git add output.svg
         # Only commit if changes were actually made to prevent empty build errors
         git diff-index --quiet HEAD || git commit -m "Anime Preference Prediction SVG Update [skip ci]"
-        git push
+        git push || echo "No changes to push"
