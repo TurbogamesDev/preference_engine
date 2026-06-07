@@ -13,9 +13,9 @@ class Entry:
         self.progress: int = raw_entry["progress"]
         self.status: str = raw_entry["status"]
         self.start_date: datetime = datetime.now() if self.status == "PLANNING" else datetime(
-            raw_entry["startedAt"]["year"],
-            raw_entry["startedAt"]["month"],
-            raw_entry["startedAt"]["day"],
+            raw_entry["startedAt"]["year"] or 1,
+            raw_entry["startedAt"]["month"] or 1,
+            raw_entry["startedAt"]["day"] or 1,
             tzinfo = timezone.utc
         )
         self.rewatch_count: int = raw_entry["repeat"]
