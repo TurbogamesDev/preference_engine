@@ -107,7 +107,7 @@ with open("log_file.txt", "a", encoding="utf-8") as file:
 
     file.write("\n")
 
-    file.write("-" * 80)
+    file.write("*" * 120)
 
     file.write("\n")
 
