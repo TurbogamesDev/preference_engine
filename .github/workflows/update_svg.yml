@@ -39,6 +39,7 @@ jobs:
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add output.svg
         git add log_file.txt
+        git add tag_score_log_file.txt
         # Only commit if changes were actually made to prevent empty build errors
         git commit -m "Anime Preference Prediction SVG Update [skip ci]"
         git push || echo "No changes to push"

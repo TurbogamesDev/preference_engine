@@ -93,16 +93,39 @@ table_headers = ["Rank", "Anime Title", "Prediction", "Status"]
 with open("output.svg", "w", encoding="utf-8") as file:
     file.write(table_to_svg.convert_table_to_svg(table_data))
 
-table_data.extend([
-    [f"#{i}", entry.media.title, f"{entry.normalised_score:.2f}%", entry.status]
-    for i, entry in enumerate(sorted(started_entries, key = lambda x: x.normalised_score, reverse = True), 1)
-])
+# table_data.extend([
+#     [f"#{i}", entry.media.title, f"{entry.normalised_score:.2f}%", entry.status]
+#     for i, entry in enumerate(sorted(started_entries, key = lambda x: x.normalised_score, reverse = True), 1)
+# ])
+
+table_data = [
+    [f"#{i}", entry.media.title, f"{entry.normalised_score}", entry.status]
+    for i, entry in enumerate(sorted(started_entries + not_started_entries, key = lambda x: x.normalised_score, reverse = True), 1)
+]
 
 with open("log_file.txt", "a", encoding="utf-8") as file:
     file.write(f"Log file for {datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%H:%M:%S %d/%m/%y")}:\n")
 
     file.write(
         tabulate(table_data, table_headers)
+    )
+
+    file.write("\n")
+
+    file.write("*" * 120)
+
+    file.write("\n")
+
+with open("tag_score_log_file.txt", "a", encoding="utf-8") as file:
+    file.write(f"Log file for {datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%H:%M:%S %d/%m/%y")}:\n")
+
+    file.write(
+        tabulate(
+            [
+                [f"#{i}", tag_score.tag_name, tag_score.total_tag_score]
+                for i, tag_score in enumerate(sorted(tag_scores.values(), key = lambda x: x.total_tag_score, reverse = True), 1)
+            ],
+        )
     )
 
     file.write("\n")
