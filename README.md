@@ -1,4 +1,4 @@
-work in progress
+![Anime Preference Predictor](./output.svg)
 
 to-do list:
 - get every anime on my profile in an arranged manner with custom classes (entry class)
