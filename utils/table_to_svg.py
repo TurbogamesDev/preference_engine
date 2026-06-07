@@ -1,4 +1,5 @@
 from utils.entry import Entry
+from datetime import datetime
 
 svg_format = """
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 448" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: auto; max-width: 720px;">
@@ -28,6 +29,7 @@ svg_format = """
   <line x1="35" y1="85" x2="685" y2="85" class="line" />
 
   {ROWS}
+<!-- {TIMESTAMP} -->
 </svg>
 """
 
@@ -74,4 +76,4 @@ def convert_table_to_svg(input_table) -> str:
                 FIELD_3 = row[2],
             )
 
-    return return_svg.format(ROWS = rows_svg)
+    return return_svg.format(ROWS = rows_svg, TIMESTAMP = datetime.now().timestamp)
