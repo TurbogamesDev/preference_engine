@@ -6,6 +6,7 @@ from utils.tag_score import TagScore
 import utils.entry_score_calculator as entry_score_calc
 import statistics
 from tabulate import tabulate
+import utils.table_to_svg as table_to_svg
 
 test_query_file_path = "queries/test_query.graphql"
 
@@ -85,9 +86,8 @@ table_data = [
 
 table_headers = ["Rank", "Anime Title", "Prediction"]
 
-print(
-    tabulate(table_data, table_headers, "fancy_grid")
-)
+with open("output.svg", "w", encoding="utf-8") as file:
+    file.write(table_to_svg.convert_table_to_svg(table_data))
 
 # table_data = [
 #     [i, entry.media.title, f"{}"]
