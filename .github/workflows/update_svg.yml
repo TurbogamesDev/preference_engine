@@ -1,14 +1,9 @@
 name: Anime Preference Prediction SVG Updator
 
 on:
-  # Automatically triggers every day at midnight UTC
+  workflow_dispatch:
   schedule:
     - cron: '37 * * * *'
-  # Allows you to manually click a button in GitHub to trigger it anytime
-  # workflow_dispatch:
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build-and-update:
