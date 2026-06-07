@@ -3,6 +3,9 @@ from utils.entry import Entry
 # from utils.media import Media
 # from utils.tag_data import TagData
 from utils.tag_score import TagScore
+import utils.entry_score_calculator as entry_score_calc
+import statistics
+from tabulate import tabulate
 
 test_query_file_path = "queries/test_query.graphql"
 
@@ -20,6 +23,7 @@ started_entries: list[Entry] = []
 not_started_entries: list[Entry] = []
 
 tag_scores: dict[str, TagScore] = {}
+started_entry_score_values: list[float] = []
 
 for watch_list in response["MediaListCollection"]["lists"]: #[0]["entries"]:
     for raw_entry in watch_list["entries"]:
@@ -38,20 +42,61 @@ for entry in started_entries:
             tag_scores[tag_data.tag_name] = TagScore(tag_data.tag_name)
 
         tag_scores[tag_data.tag_name].add_entry(entry, tag_data)
-
-lowest_tag_score = +10000.0
-
-for tag_score in tag_scores.values():
-    if tag_score.total_tag_score > lowest_tag_score:
-        continue
     
-    lowest_tag_score = tag_score.total_tag_score
+for entry in started_entries:
+    started_entry_score_values.append(entry_score_calc.calculate_raw_entry_score(entry, tag_scores))
 
-    print(f"Tag {tag_score.tag_name} has a score of {tag_score.total_tag_score}")
+for entry in started_entries:
+    raw_entry_score = entry_score_calc.calculate_raw_entry_score(entry, tag_scores)
+    normalised_entry_score = entry_score_calc.normalise_raw_entry_score(
+        raw_entry_score,
+        max(started_entry_score_values),
+        statistics.median(started_entry_score_values)
+    )
 
-tag_score = tag_scores["Gender Bending"]
+    # table_data.append([entry.media.title, f"{normalised_entry_score}%"])
 
-print(f"Tag {tag_score.tag_name} has a score of {tag_score.total_tag_score}")
+    # print(f"This should be 100%: {entry_score_calc.normalise_raw_entry_score(max(started_entry_score_values), max(tag_score_values), statistics.median(tag_score_values))}%")
+    # print(f"This should be 50%: {entry_score_calc.normalise_raw_entry_score(max(tag_score_values), max(tag_score_values), statistics.median(tag_score_values))}%")
+    print(f"{entry.media.title} is predicted to have a score of {normalised_entry_score:.2f}%") 
+
+print("-"*80)
+
+for entry in not_started_entries:
+    raw_entry_score = entry_score_calc.calculate_raw_entry_score(entry, tag_scores)
+    normalised_entry_score = entry_score_calc.normalise_raw_entry_score(
+        raw_entry_score,
+        max(started_entry_score_values),
+        statistics.median(started_entry_score_values)
+    )
+
+    entry.normalised_score = normalised_entry_score
+
+    # table_data.append([entry.media.title, f"{normalised_entry_score:.2f}%"])
+
+    # print(f"This should be 100%: {entry_score_calc.normalise_raw_entry_score(max(started_entry_score_values), max(tag_score_values), statistics.median(tag_score_values))}%")
+    # print(f"This should be 50%: {entry_score_calc.normalise_raw_entry_score(max(tag_score_values), max(tag_score_values), statistics.median(tag_score_values))}%")
+    print(f"{entry.media.title} is predicted to have a score of {normalised_entry_score:.2f}%") 
+
+table_data = [
+    [f"#{i}", entry.media.title, f"{entry.normalised_score:.2f}%"]
+    for i, entry in enumerate(sorted(not_started_entries, key = lambda x: x.normalised_score, reverse = True), 1)
+]
+
+table_headers = ["Rank", "Anime Title", "Prediction"]
+
+print(
+    tabulate(table_data, table_headers, "fancy_grid")
+)
+
+# table_data = [
+#     [i, entry.media.title, f"{}"]
+#     for i, entry in enumerate(not_started_entries, 1)
+# ]
+
+# for tag_score in tag_scores.values():
+#     print(f"Tag {tag_score.tag_name} has a score of {round(tag_score.total_tag_score, 2)}")
+
 
 
 
