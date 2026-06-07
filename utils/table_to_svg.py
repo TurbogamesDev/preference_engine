@@ -1,5 +1,6 @@
-from utils.entry import Entry
+# from utils.entry import Entry
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 svg_format = """
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 448" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: auto; max-width: 720px;">
@@ -75,4 +76,4 @@ def convert_table_to_svg(input_table) -> str:
                 FIELD_3 = row[2],
             )
 
-    return return_svg.format(ROWS = rows_svg, TIMESTAMP = datetime.now().strftime("%H:%M %d/%m/%y"))
+    return return_svg.format(ROWS = rows_svg, TIMESTAMP = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%H:%M %d/%m/%y"))
