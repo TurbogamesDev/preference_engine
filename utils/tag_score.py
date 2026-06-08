@@ -3,6 +3,8 @@ from utils.tag_data import TagData
 
 from datetime import datetime, timezone
 
+tag_weight_exponent = 1.5
+
 class TagScore:
     def __init__(self, tag_name: str) -> None:
         self.tag_name: str = tag_name
@@ -17,6 +19,6 @@ class TagScore:
             datetime.now(timezone.utc)
         )
 
-        entry_score = (amount_of_tag_in_show ** 2) * (completion_weight) * (run_time_in_hours) * (decay_factor)
+        entry_score = (amount_of_tag_in_show ** tag_weight_exponent) * (completion_weight) * (run_time_in_hours) * (decay_factor)
 
         self.total_tag_score += entry_score
