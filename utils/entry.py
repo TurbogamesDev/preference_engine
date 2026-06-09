@@ -35,7 +35,7 @@ class Entry:
         elif self.status == "REPEATING":
             return min(1.0, (self.progress / self.media.total_episodes)) + self.rewatch_count + 1
         elif self.status == "DROPPED":
-            return min(1.0, (self.progress / self.media.total_episodes)) - 2.5
+            return min(1.0, (self.progress / self.media.total_episodes)) - 1.0
         else:
             return 0.0
         
