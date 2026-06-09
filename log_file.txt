@@ -11875,3 +11875,94 @@ Rank    Anime Title                                                             
 #86     Kaguya-sama: Love is War                                                              -13.6575    DROPPED
 #87     Interspecies Reviewers                                                                -59.6661    DROPPED
 ************************************************************************************************************************
+Log file for 15:18:26 09/06/26:
+Rank    Anime Title                                                                           Prediction  Status
+------  ----------------------------------------------------------------------------------  ------------  ---------
+#1      Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved                       100         COMPLETED
+#2      Miss Kobayashi's Dragon Maid S                                                         91.3455    COMPLETED
+#3      TONIKAWA: Over The Moon For You ~SNS~                                                  82.124     COMPLETED
+#4      Miss Kobayashi's Dragon Maid                                                           81.5379    COMPLETED
+#5      Cosmic Princess Kaguya!                                                                79.0931    COMPLETED
+#6      TONIKAWA: Over The Moon For You Season 2                                               78.5892    COMPLETED
+#7      TONIKAWA: Over The Moon For You ~Uniform~                                              77.8093    COMPLETED
+#8      ONIMAI: I'm Now Your Sister!                                                           77.7717    COMPLETED
+#9      Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!                           77.5389    PLANNING
+#10     Mechanical Marie                                                                       70.1786    PLANNING
+#11     TONIKAWA: Over The Moon For You                                                        69.8424    COMPLETED
+#12     Cultural Exchange with a Game Centre Girl                                              69.6826    PLANNING
+#13     There was a Cute Girl in the Hero’s Party, so I Tried Confessing to Her                69.3577    COMPLETED
+#14     Wash It All Away                                                                       67.8772    COMPLETED
+#15     The Villager of Level 999                                                              67.7135    PLANNING
+#16     Alma-chan Wants to Be a Family!                                                        66.484     COMPLETED
+#17     Welcome to Japan, Ms. Elf!                                                             65.6771    COMPLETED
+#18     The Pet Girl of Sakurasou                                                              65.1425    COMPLETED
+#19     The Villainess Is Adored by the Prince of the Neighbor Kingdom                         60.5129    PLANNING
+#20     Killed again, Mr. Detective.                                                           57.7218    CURRENT
+#21     Gabriel DropOut                                                                        57.4929    COMPLETED
+#22     Studio Apartment, Good Lighting, Angel Included                                        56.5793    COMPLETED
+#23     Amagi Brilliant Park: No Time to Take It Easy!                                         54.6715    COMPLETED
+#24     Amagi Brilliant Park: Wakuwaku Mini Theater Rakugaki Backstage                         54.3496    COMPLETED
+#25     A Misanthrope Teaches a Class for Demi-Humans                                          53.2089    PLANNING
+#26     The Helpful Fox Senko-san                                                              53.0939    PLANNING
+#27     TONIKAWA: Over The Moon For You ~High School Days~                                     51.7445    COMPLETED
+#28     Ichijyoma Mankitsu Gurashi!                                                            51.6361    CURRENT
+#29     Summer Pockets                                                                         50.6036    PLANNING
+#30     VTuber Legend: How I Went Viral after Forgetting to Turn Off My Stream                 50         DROPPED
+#31     Drug Store in Another World - The Slow Life of a Cheat Pharmacist                      49.9636    PLANNING
+#32     Grandpa and Grandma Turn Young Again                                                   49.18      PLANNING
+#33     Amagi Brilliant Park                                                                   48.505     COMPLETED
+#34     I Want to End this Love Game                                                           48.3401    CURRENT
+#35     Plastic Memories                                                                       48.0432    PLANNING
+#36     Love, Chunibyo & Other Delusions                                                       46.5425    PLANNING
+#37     Chitose-kun wa Ramune Bin no Naka Part 2                                               46.5395    PLANNING
+#38     Chitose Is in the Ramune Bottle                                                        46.4638    COMPLETED
+#39     My Sweet Tyrant                                                                        46.4036    PLANNING
+#40     Even a Replica Can Fall in Love                                                        46.256     PLANNING
+#41     The Angel Next Door Spoils Me Rotten                                                   45.5439    COMPLETED
+#42     Agents of the Four Seasons: Dance of Spring                                            44.0506    PLANNING
+#43     My Friend's Little Sister Has It In for Me!                                            43.9527    PLANNING
+#44     2.5 Dimensional Seduction                                                              43.3172    PLANNING
+#45     And you thought there is never a girl online?                                          43.0885    COMPLETED
+#46     The Angel Next Door Spoils Me Rotten2                                                  42.7591    PLANNING
+#47     Food for the Soul                                                                      41.6412    PLANNING
+#48     SUPER HXEROS                                                                           41.3191    PLANNING
+#49     Mysteria Friends                                                                       40.3822    PLANNING
+#50     You and I Are Polar Opposites                                                          40.1509    DROPPED
+#51     Marika's Love Meter Malfunction                                                        39.8235    COMPLETED
+#52     I Made Friends with the Second Prettiest Girl in My Class                              39.7563    CURRENT
+#53     BOCCHI THE ROCK!                                                                       39.1379    PLANNING
+#54     Call of the Night                                                                      39.0185    CURRENT
+#55     Science Fell in Love, So I Tried to Prove It                                           37.3045    COMPLETED
+#56     Kakushite! Makina-san!                                                                 36.0639    PLANNING
+#57     Science Fell in Love, So I Tried to Prove It r=1-sinθ                                  35.4823    PLANNING
+#58     Yowayowa Sensei                                                                        33.5066    CURRENT
+#59     Toradora!                                                                              31.4253    PLANNING
+#60     Bottom-Tier Character Tomozaki                                                         29.7486    PLANNING
+#61     kiss×sis (TV)                                                                          29.5876    PLANNING
+#62     Oshi No Ko                                                                             29.1799    PLANNING
+#63     Komi Can’t Communicate                                                                 28.9284    PLANNING
+#64     This Art Club Has a Problem!                                                           28.8888    PLANNING
+#65     Nyaruko: Crawling with Love!                                                           28.7669    PLANNING
+#66     Love Lab                                                                               26.6492    PLANNING
+#67     No-Rin                                                                                 25.6002    PLANNING
+#68     Kiss x Sis                                                                             25.599     PLANNING
+#69     Kokoro Connect                                                                         22.5727    PLANNING
+#70     My Deer Friend Nokotan                                                                 21.7509    PLANNING
+#71     Tokidoki Bosotto Russiago de Dereru Tonari no Alya-san Season 2                        19.7847    PLANNING
+#72     The Shiunji Family Children                                                            19.6035    PLANNING
+#73     Mistress Kanan is Devilishly Easy                                                      18.8001    PLANNING
+#74     O Maidens in Your Savage Season                                                        17.3011    PLANNING
+#75     The Genius Prince's Guide to Raising a Nation Out of Debt                              16.3218    DROPPED
+#76     Botan Kamiina Fully Blossoms When Drunk                                                15.8581    DROPPED
+#77     Yamada and the Seven Witches                                                           15.4448    DROPPED
+#78     Alya Sometimes Hides Her Feelings in Russian                                           14.8181    COMPLETED
+#79     Tune In to the Midnight Heart                                                          12.3431    PLANNING
+#80     The Kawai Complex Guide to Manors and Hostel Behavior                                  11.5598    DROPPED
+#81     DON'T TOY WITH ME, MISS NAGATORO                                                       10.9331    PLANNING
+#82     Rascal Does Not Dream of Bunny Girl Senpai                                              3.26121   DROPPED
+#83     Hensuki: Are you willing to fall in love with a pervert, as long as she’s a cutie?      0.309724  DROPPED
+#84     Makeine: Too Many Losing Heroines!                                                     -2.87109   PLANNING
+#85     Why the hell are you here, Teacher!?                                                   -7.83665   DROPPED
+#86     Kaguya-sama: Love is War                                                              -13.6575    DROPPED
+#87     Interspecies Reviewers                                                                -59.6661    DROPPED
+************************************************************************************************************************
