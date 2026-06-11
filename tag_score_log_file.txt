@@ -51441,3 +51441,192 @@ Log file for 14:54:47 11/06/26:
 #185  Bar                           -4.15773
 ----  ----------------------------  ----------
 ************************************************************************************************************************
+Log file for 15:18:24 11/06/26:
+----  ----------------------------  ----------
+#1    Female Protagonist            28.32
+#2    Heterosexual                  25.3924
+#3    Family Life                   22.4163
+#4    Male Protagonist              20.9054
+#5    School                        18.138
+#6    Iyashikei                     17.1789
+#7    Found Family                  16.0311
+#8    Coming of Age                 14.2058
+#9    Cute Girls Doing Cute Things  14.044
+#10   Work                          13.9087
+#11   Shounen                       13.4465
+#12   Magic                         13.4376
+#13   Otaku Culture                 12.7764
+#14   Video Games                   10.9441
+#15   Primarily Teen Cast           10.9304
+#16   Urban Fantasy                 10.6626
+#17   Primarily Female Cast         10.4814
+#18   Cohabitation                  10.3633
+#19   Nudity                         9.73733
+#20   Dragons                        9.17221
+#21   Marriage                       8.93156
+#22   Kuudere                        8.62251
+#23   Maids                          8.54032
+#24   Reverse Isekai                 8.18141
+#25   Urban                          8.12962
+#26   Hikikomori                     8.06524
+#27   Tsundere                       7.97599
+#28   Estranged Family               7.23157
+#29   Yandere                        6.85883
+#30   Drawing                        6.55368
+#31   Monster Girl                   5.95095
+#32   Disability                     5.91838
+#33   Chuunibyou                     5.85301
+#34   Isekai                         5.81849
+#35   Software Development           5.64647
+#36   Female Harem                   5.33765
+#37   Demons                         4.87948
+#38   Educational                    4.63874
+#39   Rehabilitation                 4.61962
+#40   Anthropomorphism               4.5272
+#41   Slapstick                      4.43999
+#42   Artificial Intelligence        4.29125
+#43   Philosophy                     4.02081
+#44   Virtual World                  3.94422
+#45   Robots                         3.81238
+#46   Office Lady                    3.60493
+#47   Angels                         3.55965
+#48   Food                           3.47801
+#49   Age Gap                        3.16422
+#50   Surreal Comedy                 3.15599
+#51   Dungeon                        2.86609
+#52   Parenthood                     2.84251
+#53   Curses                         2.83415
+#54   Amnesia                        2.81072
+#55   Chibi                          2.74622
+#56   Love Triangle                  2.64248
+#57   Animals                        2.56939
+#58   Large Breasts                  2.49953
+#59   Age Regression                 2.48218
+#60   Boarding School                2.47292
+#61   Aliens                         2.44621
+#62   Mythology                      2.35793
+#63   CGI                            2.35414
+#64   Elf                            2.27306
+#65   Parody                         2.27132
+#66   Gods                           2.21939
+#67   Yuri                           2.15721
+#68   Reincarnation                  2.12955
+#69   Transgender                    2.02238
+#70   School Club                    1.90505
+#71   Primarily Child Cast           1.88143
+#72   Fairy                          1.84259
+#73   Language Barrier               1.7938
+#74   Gyaru                          1.76659
+#75   Coastal                        1.76044
+#76   E-Sports                       1.71277
+#77   Kemonomimi                     1.69181
+#78   Idol                           1.67796
+#79   Fairy Tale                     1.65836
+#80   Vampire                        1.60498
+#81   Anti-Hero                      1.59771
+#82   Mermaid                        1.56878
+#83   Rural                          1.53618
+#84   Time Skip                      1.44456
+#85   Swordplay                      1.39635
+#86   College                        1.38448
+#87   Detective                      1.34434
+#88   Primarily Adult Cast           1.31925
+#89   Femboy                         1.25046
+#90   Volleyball                     1.09837
+#91   Crossdressing                  1.07511
+#92   Real Robot                     1.02412
+#93   Adoption                       1.00057
+#94   Baseball                       0.948907
+#95   Bullying                       0.916368
+#96   Vocal Synth                    0.887861
+#97   Pirates                        0.871838
+#98   Shapeshifting                  0.834741
+#99   Historical                     0.809738
+#100  Basketball                     0.711058
+#101  Economics                      0.674263
+#102  Restaurant                     0.652509
+#103  Fugitive                       0.635301
+#104  Ojou-sama                      0.554463
+#105  Foreign                        0.544352
+#106  Spearplay                      0.48329
+#107  LGBTQ+ Themes                  0.456066
+#108  Desert                         0.404323
+#109  Cosplay                        0.403907
+#110  Astronomy                      0.382049
+#111  Kaiju                          0.362082
+#112  Guns                           0.361017
+#113  Aromantic                      0.353205
+#114  Dullahan                       0.350347
+#115  Monster Boy                    0.350347
+#116  Seinen                         0.348015
+#117  Ensemble Cast                  0.346769
+#118  Drugs                          0.285499
+#119  Crime                          0.285499
+#120  Suicide                        0.285499
+#121  Ghost                          0.263919
+#122  Psychosexual                   0.261923
+#123  VTuber                         0.229754
+#124  Archery                        0.218036
+#125  Gender Bending                 0.127029
+#126  Bisexual                      -0.0116845
+#127  Nekomimi                      -0.0668633
+#128  Feet                          -0.15571
+#129  Tragedy                       -0.21102
+#130  Mountaineering                -0.283491
+#131  Gore                          -0.302793
+#132  Femdom                        -0.333007
+#133  Afterlife                     -0.344422
+#134  Time Manipulation             -0.346889
+#135  Group Sex                     -0.405696
+#136  Outdoor Activities            -0.424104
+#137  Teacher                       -0.476665
+#138  Skeleton                      -0.502832
+#139  Centaur                       -0.553944
+#140  Zombie                        -0.553944
+#141  Satire                        -0.595811
+#142  Medieval                      -0.63313
+#143  Photography                   -0.652235
+#144  Episodic                      -0.688378
+#145  Clone                         -0.696583
+#146  Incest                        -0.70114
+#147  Calligraphy                   -0.792732
+#148  Mixed Gender Harem            -0.975392
+#149  Tentacles                     -0.986025
+#150  Alchemy                       -1.08192
+#151  Tanned Skin                   -1.11823
+#152  Religion                      -1.13348
+#153  Travel                        -1.13967
+#154  Acting                        -1.14089
+#155  MILF                          -1.20767
+#156  Irrumatio                     -1.21432
+#157  Futanari                      -1.21432
+#158  Time Loop                     -1.2797
+#159  Cunnilingus                   -1.35171
+#160  Lactation                     -1.42222
+#161  Interspecies                  -1.42222
+#162  Facial                        -1.56679
+#163  War                           -1.57582
+#164  Dissociative Identities       -1.78844
+#165  Boobjob                       -1.86956
+#166  Tomboy                        -1.88674
+#167  Memory Manipulation           -1.93341
+#168  Hypersexuality                -1.98762
+#169  Conspiracy                    -1.99617
+#170  Royal Affairs                 -1.99617
+#171  Ahegao                        -2.10806
+#172  Exhibitionism                 -2.1219
+#173  Politics                      -2.13222
+#174  Succubus                      -2.35592
+#175  Human Pet                     -2.36635
+#176  Meta                          -2.40443
+#177  Sadism                        -2.49273
+#178  Bondage                       -2.51362
+#179  Military                      -2.71831
+#180  Body Swapping                 -2.72938
+#181  Prostitution                  -2.92347
+#182  Unrequited Love               -2.92628
+#183  Kingdom Management            -3.05686
+#184  Witch                         -3.21314
+#185  Bar                           -4.15773
+----  ----------------------------  ----------
+************************************************************************************************************************
